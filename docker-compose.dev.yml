@@ -1,0 +1,14 @@
+services:
+  vue-project:
+    # container_name: vue-project_dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      # - ./src:/app/src
+      # - ./static:/app/static
+      - ./:/app
+      - /app/node_modules
+    restart: always
+    ports:
+      - 3245:3245

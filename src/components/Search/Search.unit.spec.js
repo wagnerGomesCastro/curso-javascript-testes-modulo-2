@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import Search from '@/components/Search';
+import Search from '@/components/Search/Search';
 
 describe('Search - unit', () => {
   it('should mount the component', () => {

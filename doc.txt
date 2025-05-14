@@ -1,0 +1,19 @@
+# npm-22.15 i --legacy-peer-deps
+# nuxt  dev --dotenv .env.local
+# docker compose -f docker-compose.dev.yml up -d --build vue-project
+# docker compose -f docker-compose.dev.yml up vue-project
+# docker compose -f docker-compose.dev.yml exec vue-project sh
+# npx-22.15 nuxt  dev --dotenv .env.local
+# npm-22.15 run dev --dotenv .env.local
+# npm-22.15 run test:watch ProductList
+
+
+RUNS  src/components/CartItem/CartItem.unit.spec.js
+RUNS  src/pages/ProductList.integration.spec.js
+RUNS  src/components/ProductCard/ProductCard.unit.spec.js
+RUNS  src/components/Cart/Cart.unit.spec.js
+RUNS  src/layouts/default.integration.spec.js
+RUNS  src/managers/CartManager.unit.spec.js
+RUNS  src/layouts/default.unit.spec.js
+RUNS  src/components/Search/Search.unit.spec.js
+

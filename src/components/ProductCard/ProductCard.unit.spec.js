@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
-import ProductCard from '@/components/ProductCard';
 import { makeServer } from '@/miragejs/server';
 import { CartManager } from '@/managers/CartManager';
+import ProductCard from '@/components/ProductCard/ProductCard.vue';
 
 describe('ProductCard - unit', () => {
   let server;

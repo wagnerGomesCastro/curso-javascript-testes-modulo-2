@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
 import DefaultLayout from '@/layouts/default';
-import Cart from '@/components/Cart';
+import Cart from '@/components/Cart/Cart.vue';
 import { CartManager } from '@/managers/CartManager';
 
 describe('Default Layout', () => {

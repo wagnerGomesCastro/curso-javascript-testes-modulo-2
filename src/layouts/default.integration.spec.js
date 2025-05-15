@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils';
 import flushPromises from 'flush-promises';
 import axios from 'axios';
 import DefaultLayout from '@/layouts/default';
-import Cart from '@/components/Cart';
+import Cart from '@/components/Cart/Cart.vue';
 import { CartManager } from '@/managers/CartManager';
 import { makeServer } from '@/miragejs/server';
 

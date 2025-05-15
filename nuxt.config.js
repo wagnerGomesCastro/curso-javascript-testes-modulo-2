@@ -1,4 +1,5 @@
 export default {
+  srcDir: 'src/',
   target: 'static',
   ssr: false,
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -41,4 +42,8 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+  server: {
+    port: 3245, // Porta personalizada
+    host: '0.0.0.0', // Permite acessar de outros dispositivos
+  },
 };

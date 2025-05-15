@@ -1,8 +1,8 @@
 import { mount } from '@vue/test-utils';
 import Vue from 'vue';
 import axios from 'axios';
-import ProductCard from '@/components/ProductCard';
-import Search from '@/components/Search';
+import ProductCard from '@/components/ProductCard/ProductCard.vue';
+import Search from '@/components/Search/Search.vue';
 import { makeServer } from '@/miragejs/server';
 import ProductList from '.';
 

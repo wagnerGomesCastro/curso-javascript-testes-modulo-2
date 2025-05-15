@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"],
+      "~~/*": ["./src/*"],
+      "@@/*": ["./src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist",
+    ".github",
+    "build",
+    "coverage",
+    "public",
+    ".husky",
+    "cypress"
+  ]
+}

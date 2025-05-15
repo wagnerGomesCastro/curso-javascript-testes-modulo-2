@@ -1,6 +1,17 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-console */
 import { createServer, Response } from 'miragejs';
 
-if (process.env.NODE_ENV === 'development' && !process.env.USE_API) {
+// console.log(
+//   'process.env.NODE_ENV',
+//   process.env.NODE_ENV,
+//   process.env.USE_API,
+//   process.env.USE_API === false
+// );
+
+// process.env.USE_API === false;
+
+if (process.env.NODE_ENV === 'development' && process.env.USE_API) {
   require('@/miragejs/server').makeServer();
 }
 

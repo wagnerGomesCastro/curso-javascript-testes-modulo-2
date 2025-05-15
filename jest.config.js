@@ -1,7 +1,7 @@
 module.exports = {
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/$1',
-    '^~/(.*)$': '<rootDir>/$1',
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^~/(.*)$': '<rootDir>/src/$1',
     '^vue$': 'vue/dist/vue.common.js',
   },
   testPathIgnorePatterns: ['/cypress/'],
@@ -12,9 +12,9 @@ module.exports = {
   },
   collectCoverage: false,
   collectCoverageFrom: [
-    '<rootDir>/components/**/*.vue',
-    '<rootDir>/pages/**/*.vue',
-    '<rootDir>/layouts/**/*.vue',
-    '<rootDir>/managers/**/*.js',
+    '<rootDir>/src/components/**/*.vue',
+    '<rootDir>/src/pages/**/*.vue',
+    '<rootDir>/src/layouts/**/*.vue',
+    '<rootDir>/src/managers/**/*.js',
   ],
 };

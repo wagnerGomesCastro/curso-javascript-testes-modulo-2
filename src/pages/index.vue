@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import ProductCard from '@/components/ProductCard';
-import Search from '@/components/Search';
+import ProductCard from '@/components/ProductCard/ProductCard.vue';
+import Search from '@/components/Search/Search.vue';
 
 export default {
   components: { ProductCard, Search },

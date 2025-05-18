@@ -1,4 +1,7 @@
-import { makeServer } from '../../../miragejs/server';
+import { slowCypressDown } from 'cypress-slow-down';
+import { makeServer } from '../../src/miragejs/server';
+
+slowCypressDown(1000);
 
 context('Store', () => {
   let server;

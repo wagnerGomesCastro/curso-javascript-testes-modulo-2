@@ -1,7 +1,7 @@
 # npm-22.15 i --legacy-peer-deps
 # nuxt  dev --dotenv .env.local
 # docker compose -f docker-compose.dev.yml up -d --build vue-project
-# docker compose -f docker-compose.dev.yml up vue-project
+# docker compose -f docker-compose.dev.yml up --remove-orphans vue-project
 # docker compose -f docker-compose.dev.yml exec vue-project sh
 # npx-22.15 nuxt  dev --dotenv .env.local
 # npm-22.15 run dev --dotenv .env.local
@@ -17,3 +17,4 @@ RUNS  src/managers/CartManager.unit.spec.js
 RUNS  src/layouts/default.unit.spec.js
 RUNS  src/components/Search/Search.unit.spec.js
 
+# https://mherman.org/blog/dockerizing-a-vue-app/

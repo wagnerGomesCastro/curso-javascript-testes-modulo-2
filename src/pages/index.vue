@@ -16,6 +16,7 @@
           :key="product.id"
           :product="product"
           data-testid="product-card"
+          data-cy="product-card"
         />
       </div>
     </div>

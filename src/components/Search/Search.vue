@@ -1,5 +1,6 @@
 <template>
   <form
+    data-cy="form-search"
     data-testid="search-form"
     class="relative mt-6 max-w-lg mx-auto"
     @submit.prevent="doSearch"
@@ -20,6 +21,7 @@
       class="w-full border rounded-md pl-10 pr-4 py-2 focus:border-blue-500 focus:outline-none focus:shadow-outline"
       type="search"
       placeholder="Search"
+      data-cy="input-search"
     />
   </form>
 </template>

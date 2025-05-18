@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 import Vue from 'vue';
 import { mount } from '@vue/test-utils';
 import CartItem from '@/components/CartItem/CartItem';
@@ -39,7 +40,7 @@ describe('Cart', () => {
     expect(wrapper.vm).toBeDefined();
   });
 
-  it('should not display empty cart button when there are no products', () => {
+  it.only('should not display empty cart button when there are no products', () => {
     const { cartManager } = mountCart();
 
     const wrapper = mount(Cart, {

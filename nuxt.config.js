@@ -1,7 +1,8 @@
 export default {
   srcDir: 'src/',
   target: 'static',
-  ssr: false,
+  // ssr: false,
+  mode: process.env.NODE_ENV === 'production' ? 'universal' : 'spa',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'watch-store',
@@ -23,7 +24,11 @@ export default {
   components: false,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  buildModules: [
+    '@nuxtjs/dotenv',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+  ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -34,7 +39,8 @@ export default {
   ],
 
   env: {
-    USE_API: !!process.env.USE_API,
+    // eslint-disable-next-line eqeqeq
+    USE_API: !!process.env?.USE_API,
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

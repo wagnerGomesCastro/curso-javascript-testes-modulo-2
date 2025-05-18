@@ -4,7 +4,17 @@ module.exports = {
     '^~/(.*)$': '<rootDir>/src/$1',
     '^vue$': 'vue/dist/vue.common.js',
   },
-  testPathIgnorePatterns: ['/cypress/'],
+  testPathIgnorePatterns: [
+    '<rootDir>/.git/',
+    '<rootDir>/.hust/',
+    '<rootDir>/cypress/',
+    '<rootDir>/.node/',
+    '<rootDir>/.nuxt/',
+    '<rootDir>/node_modules/',
+    '<rootDir>/_node_modules/',
+    '<rootDir>/dist/',
+    '<rootDir>/coverage/',
+  ],
   moduleFileExtensions: ['js', 'vue', 'json'],
   transform: {
     '^.+\\.js$': 'babel-jest',
